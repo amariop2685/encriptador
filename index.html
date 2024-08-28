@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Encriptador de Texto</h1>
+            <textarea id="input-text" placeholder="Ingresa el texto aquí..."></textarea>
+            <div class="buttons">
+                <button id="encrypt-btn" class="action-btn">Cifrar</button>
+                <button id="decrypt-btn" class="action-btn">Descifrar</button>
+            </div>
+            <p class="validation-message">No se aceptan mayúsculas ni caracteres especiales.</p>
+        </div>
+
+        <div class="right-section">
+            <div class="output-container">
+                <img id="placeholder-img" src="images/muneco.png"    alt="Ningún mensaje fue encontrado">
+                <textarea id="output-text" readonly></textarea>
+            </div>
+            <button id="copy-btn" class="action-btn">Copiar</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Mario Acosta</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
